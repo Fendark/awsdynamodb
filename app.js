@@ -20,8 +20,7 @@ app.get('/user/:userid', function(req,res){
 	var params = {
 		TableName:"users",
 		Key:{
-			"userid":"",
-			"promo":""
+			"userid":req.params.userid;
 		}
 	};
 
